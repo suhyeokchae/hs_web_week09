@@ -16,6 +16,13 @@
       display: flex;
     }
     /* .container의 자식들(flex item)이 자동으로 가로로 늘어섭니다. */
+
+    .mascot {
+      position: fixed;   /* 화면 기준으로 고정 */
+      right: 20px;
+      bottom: 20px;
+      width: 120px;
+    }
   </style>
 </head>
 <body>
@@ -28,5 +35,8 @@
   </ul>
   <div class="box">div.box</div>
   <button>버튼</button>
+
+  <!-- 오른쪽 아래 아기 펭귄 -->
+  <img class="mascot" src="ab.png" alt="캐릭터">
 </body>
 </html>
