@@ -29,13 +29,13 @@
 
     /* 왼쪽 사진 */
     .left-photo {
-      position: fixed;
-      left: 20px;                    /* 화면 왼쪽에서 띄울 거리 */
-      top: 50%;
-      transform: translateY(-50%);   /* 세로 가운데 맞춤 */
-      width: 300px;                  /* ★ 크기는 원하는 대로 조절 */
-      mix-blend-mode: multiply;      /* 흰 배경 사진이면 유지, 아니면 이 줄 삭제 */
-    }
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    mix-blend-mode: screen;   /* multiply → screen (검은 배경용) */
+  }
   </style>
 </head>
 <body>
