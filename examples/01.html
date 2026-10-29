@@ -17,14 +17,24 @@
     }
     /* .container의 자식들(flex item)이 자동으로 가로로 늘어섭니다. */
 
+    /* 가운데 사진 */
     .mascot {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);  /* 이미지 자기 크기의 절반만큼 되돌려 정확히 중앙에 맞춤 */
-    width: 450px;
-    mix-blend-mode: multiply;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 450px;
+      mix-blend-mode: multiply;
+    }
 
+    /* 왼쪽 사진 */
+    .left-photo {
+      position: fixed;
+      left: 20px;                    /* 화면 왼쪽에서 띄울 거리 */
+      top: 50%;
+      transform: translateY(-50%);   /* 세로 가운데 맞춤 */
+      width: 300px;                  /* ★ 크기는 원하는 대로 조절 */
+      mix-blend-mode: multiply;      /* 흰 배경 사진이면 유지, 아니면 이 줄 삭제 */
     }
   </style>
 </head>
@@ -39,6 +49,10 @@
   <div class="box">div.box</div>
   <button>버튼</button>
 
+  <!-- 가운데 사진 -->
   <img class="mascot" src="ab.png" alt="캐릭터">
+
+  <!-- ★ 왼쪽 사진: src에 넣을 사진 파일 이름을 적으세요 -->
+  <img class="left-photo" src="abc.png" alt="왼쪽 사진">
 </body>
 </html>
