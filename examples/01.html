@@ -18,11 +18,13 @@
     /* .container의 자식들(flex item)이 자동으로 가로로 늘어섭니다. */
 
     .mascot {
-      position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 450px;             /* 150px → 450px (3배) */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  /* 이미지 자기 크기의 절반만큼 되돌려 정확히 중앙에 맞춤 */
+    width: 450px;
     mix-blend-mode: multiply;
+
     }
   </style>
 </head>
